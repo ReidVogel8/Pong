@@ -28,13 +28,6 @@ pong.exe
 *.gch
 *.pch
 
-# Libraries (static and dynamic)
-*.so
-*.so.*
-*.dylib
-*.dll
-*.a
-*.lib
 
 # IDE specific files
 .vscode/
