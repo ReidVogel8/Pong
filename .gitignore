@@ -33,7 +33,6 @@ pong.exe
 *.so.*
 *.dylib
 *.dll
-*.a
 *.lib
 
 # IDE specific files
