@@ -102,10 +102,6 @@ Potential features to add:
 - Menu system
 - Multiplayer over network
 
-## License
-
-This project is available for educational and personal use.
-
 ## Acknowledgments
 
 - Original Pong game by Atari (1972)
