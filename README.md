@@ -28,8 +28,6 @@ Before building this project, ensure you have the following installed:
 Pong/
 ├── assets/
 │   └── fonts/          # Font files for text rendering
-├── external/
-│   └── SFML-2.6.2/     # SFML library files
 ├── include/            # Header files
 ├── src/                # Source files
 ├── CMakeLists.txt      # CMake build configuration
