@@ -11,6 +11,9 @@ Makefile
 *.cmake
 !CMakeLists.txt
 
+#SFML (Local Only)
+external/
+
 # Compiled binaries
 *.exe
 *.out
