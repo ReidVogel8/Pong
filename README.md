@@ -30,8 +30,10 @@ Pong/
 │   └── fonts/          # Font files for text rendering
 ├── include/            # Header files
 ├── src/                # Source files
+├── external/           # External libraries (e.g., SFML)
 ├── CMakeLists.txt      # CMake build configuration
 └── .gitignore
+
 ```
 
 ## Building the Project
