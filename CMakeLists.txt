@@ -18,18 +18,32 @@ target_include_directories(pong PRIVATE include)
 
 # Use SFML from external folder
 set(SFML_ROOT "${CMAKE_SOURCE_DIR}/external/SFML-2.6.2")
-
-target_compile_definitions(pong PRIVATE SFML_STATIC)
 target_include_directories(pong PRIVATE "${SFML_ROOT}/include")
 
-# Link SFML static libraries
-target_link_libraries(pong PRIVATE
-        "${SFML_ROOT}/lib/libsfml-graphics.a"
-        "${SFML_ROOT}/lib/libsfml-window.a"
-        "${SFML_ROOT}/lib/libsfml-system.a"
-)
-
-# Windows system libraries
+# Platform-specific settings
 if(WIN32)
-    target_link_libraries(pong PRIVATE opengl32 winmm gdi32)
+    # Static SFML for Windows
+    target_compile_definitions(pong PRIVATE SFML_STATIC)
+    target_link_libraries(pong PRIVATE
+            "${SFML_ROOT}/lib/libsfml-graphics.a"
+            "${SFML_ROOT}/lib/libsfml-window.a"
+            "${SFML_ROOT}/lib/libsfml-system.a"
+            opengl32 winmm gdi32
+    )
+elseif(APPLE)
+    # Dynamic SFML for macOS
+    find_library(COCOA_FRAMEWORK Cocoa)
+    find_library(OpenGL_FRAMEWORK OpenGL)
+    find_library(IOKIT_FRAMEWORK IOKit)
+    find_library(COREVIDEO_FRAMEWORK CoreVideo)
+
+    target_link_libraries(pong PRIVATE
+            "${SFML_ROOT}/lib/libsfml-graphics.dylib"
+            "${SFML_ROOT}/lib/libsfml-window.dylib"
+            "${SFML_ROOT}/lib/libsfml-system.dylib"
+            ${COCOA_FRAMEWORK}
+            ${OpenGL_FRAMEWORK}
+            ${IOKIT_FRAMEWORK}
+            ${COREVIDEO_FRAMEWORK}
+    )
 endif()
