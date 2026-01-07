@@ -2,7 +2,7 @@
 #include <cmath>
 #include <Paddle.h>
 #include <scoreboard.h>
-#include "SFML/Graphics.hpp"
+#include <SFML/Graphics.hpp>
 
 //constructor definition
 Ball::Ball(float x, float y) {
