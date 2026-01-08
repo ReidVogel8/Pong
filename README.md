@@ -113,4 +113,4 @@ Potential features to add:
 - SFML development team
 
 
-Enjoy playing Pong! 🏓
+Enjoy playing Pong!
