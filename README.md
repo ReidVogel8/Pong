@@ -20,7 +20,7 @@ Before building this project, ensure you have the following installed:
 - **CMake** (version 3.10 or higher)
 - **C++ Compiler** with C++11 support or higher
   - GCC 7+ / Clang 5+ / MSVC 2017+
-- **SFML 2.6.2** (included in the `external` directory)
+- **SFML 2.6.2** (add into the `external` directory)
 
 ## Project Structure
 
