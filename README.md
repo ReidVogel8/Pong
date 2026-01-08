@@ -6,6 +6,11 @@ A classic Pong game implementation built with C++ and SFML.
 
 This is a recreation of the classic pong game. This is my first c++ project so I wanted to learn by using the SFML library. This game recreates the smooth gameplay physics that were found in the original pong. 
 
+##Gameplay Demo
+
+[Watch the gameplay video](./pong.mp4)
+
+
 ## Features
 
 - Classic Pong gameplay mechanics
