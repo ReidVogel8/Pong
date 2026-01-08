@@ -8,7 +8,7 @@ This is a recreation of the classic pong game. This is my first c++ project so I
 
 ##Gameplay Demo
 
-[Watch the gameplay video](./pong.mp4)
+[Watch the gameplay video](image_2026-01-08_152337204.png)(./pong.mp4)
 
 
 ## Features
